@@ -1,0 +1,571 @@
+/*
+    Website Name: Browse
+    Desiner Coder By: Osama Ahmed
+    MainColor: #00918e;
+*/
+
+/*** Start Global ***/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.head-border:after
+{
+    content: '';
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #00918e;
+    margin: 18px auto;
+}
+
+/*** End Global ***/
+
+/********** Start Header ***********/
+.header
+{
+    background: url('../images/header.jpg') fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   
+}
+
+.header .overlay
+{
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+/********** Start Navbar ***********/
+.navbar-light { background-color: transparent; border: none }
+
+.navbar-light .navbar-brand { color: #FFF; font-size: 40px }
+
+.navbar-light .navbar-brand:hover { color: #FFF }
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: #FFF;
+    margin-right: 5px;
+    margin-top: 17px;
+    font-weight: normal;
+    font-size: 17px;
+    padding: 7px 17px;
+    transition: all .3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+    color: #FFF;
+    background-color: #00918e;
+    border-radius: 20px;
+    padding: 7px 20px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show > .nav-link
+{
+    color: #FFF;
+    background-color: #00918e;
+    border-radius: 20px;
+    padding: 7px 23px;
+}
+
+
+.navbar-toggler:not(:disabled):not(.disabled),
+.navbar-light .navbar-toggler-icon
+{
+    background-color: #00918e;
+    padding: 5px;
+}
+
+.dropdown-item:hover{ background-color: #d1d1d1; color: #00918e;} 
+/********** End Navbar ***********/
+.header-content
+{
+    position: relative;
+}
+
+.header-content h1
+{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.header-content h1 span { color: #036866 }
+
+.header-content p
+{
+    color: #FFF;
+    width: 50%;
+    margin: 0 auto 50px;
+}
+
+.header-content form 
+{
+    width: 70%;
+    margin: auto;
+    background-color: #FFF;
+    padding: 30px;
+}
+
+.header-content form input { border: none }
+
+.header-content button, select { border: none !important }
+
+.header-content i
+{
+    position: absolute;
+    top: 8px; right: 17px;
+}
+
+.header-content form input[type="submit"]
+{
+    width: 100%;
+    background-color: #00918e;
+    border-radius: 20px;
+}
+
+.header-content form input[type="submit"]:hover {background-color: #0d5f5e;}
+
+@media (max-width: 767px)
+{
+    .header-content h1 {font-size: 30px;}
+
+    .header-content form { width: 400px }
+
+    .header-content form input,header-content button, select  { margin-bottom: 10px; }
+}
+/********** End Header ***********/
+
+/********** Start Most Visited Places ***********/
+.listings { padding: 90px 0;}
+
+.listings h2 { color: #00918e }
+
+.listings p { width: 60%; margin: 0 auto 30px; color: #777 }
+
+.listings-box { margin-bottom: 30px; position: relative }
+
+.listings .listing-item { position: relative }
+
+.listings .listing-item .over
+{
+    position: absolute;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.listings .listing-item .listing-item-content 
+{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #FFF;
+    font-weight: normal;
+}
+
+.listings .listing-item .listing-item-content a { color: #FFF; text-decoration: none }
+
+.listings .listing-item .listing-item-content .category
+{
+    background-color: #00918e;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    border-radius: 10px;
+}
+
+.listings .listing-item i
+{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    background: rgba(100, 100, 100, 0.8);
+    color: #FFF;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.listings .listing-item i:hover { color: #FFF; background-color: #F00 }
+
+@media (max-width: 767px)
+{
+    .listings-box .box { margin: 0 auto 30px; }
+}
+/********** End Most Visited Places ***********/
+
+/********** Start Popular Categories ***********/
+.popular-categories { padding: 90px 0;}
+
+.popular-categories h2 { color: #00918e }
+
+.popular-categories p { width: 60%; margin: 0 auto 80px; color: #777 }
+
+.categories-box 
+{
+    background-color: #EEE;
+    padding: 40px 0;
+    border-radius: 10px;
+    line-height: 2;
+    color: #FFF;
+    cursor: pointer;
+    margin-bottom: 20px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.categories-box:hover
+{
+    background-color: #00918e;
+    color: #FFF;
+    -webkit-box-shadow: 10px 10px 20px #00918e;
+    -moz-box-shadow: 10px 10px 20px #00918e;
+    -o-box-shadow: 10px 10px 20px #00918e;
+    box-shadow: 10px 10px 20px #00918e;
+}
+
+.categories-box i { color: #00918e; margin-bottom: 12px;}
+
+.categories-box:hover i { color: #FFF }
+
+.categories-box h4 { font-size: 18px; color: #888 }
+
+.categories-box:hover h4 { color: #FFF }
+
+.categories-box span
+{
+    background-color: #dfdddd;
+    color: #000;
+    border-radius: 20px;
+    padding: 2px 18px;
+}
+
+.categories-box:hover span { color: #FFF; background-color: #036866;}
+
+.popular-categories button
+{
+    margin-top: 50px;
+    padding: 20px 105px;
+    background: none;
+    border-radius: none;
+    border: 2px solid #00918e;
+    color: #00918e;
+}
+
+.popular-categories button:hover { background-color: #00918e; color: #FFF;}
+/********** End Popular Categories ***********/
+
+/********** Start Why Us ***********/
+.why-us {padding: 80px 0;}
+
+.why-us .why-us-box:last-of-type { margin-left: 90px }
+
+.why-us .why-us-box h2 {color: #00918e; font-weight: normal;}
+
+.why-us .panel:first-of-type {margin-top: 30px;}
+
+.why-us .panel
+{
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.why-us .panel .panel-title a
+{
+    color: #555;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 767px)
+{
+    .why-us .why-us-box { margin-top: 40px;}
+
+    .why-us .why-us-box:last-of-type { margin-left: 20px }
+}
+/********** End Why Us ***********/
+
+/********** Start How It Works ***********/
+.how-work { padding: 90px 0;}
+
+.how-work h2 { color: #00918e }
+
+.how-work .work-p { width: 60%; margin: 0 auto 80px; color: #777 }
+
+.how-work .how-work-img 
+{
+    width: 300px; height: 200px;
+    margin-bottom: 80px;
+}
+
+.how-work .how-work-box span
+{
+    display: inline-block;
+    width: 50px; height: 50px;
+    line-height: 50px;
+    background-color: #e2dfdf;
+    color: #00918e;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.how-work .how-work-box h3
+{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.how-work .how-work-box p { color: #888 }
+
+@media (max-width: 767px)
+{
+    .how-work .how-work-box { margin-bottom: 90px;}
+
+    .how-work .how-work-box .how-work-img{display: block; margin: 0 auto; }
+}
+/********** End How It Works ***********/
+
+/* Start Satisfied Customers */
+.satisfied {padding: 80px 0; background-color: #f8f9fa;}
+
+.satisfied h2 {
+    color: #00918e;
+    margin: 0;
+}
+
+.satisfied .carousel-inner { background-color: #f8f9fa;}
+
+.satisfied .carousel-inner .carousel-item
+{
+    background-color: #f8f9fa;
+    min-height: 400px;
+    padding: 0; margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.satisfied .carousel-inner .carousel-item .carousel-caption
+{
+    position: absolute;
+    top: 5%; left: 20%;
+    width: 60%;
+}
+
+.satisfied .carousel-inner .carousel-item .carousel-caption img
+{
+    display: inline-block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
+.satisfied .carousel-inner .carousel-item .carousel-caption h5
+{
+    color: #000;
+}
+
+.satisfied .carousel-inner .carousel-item .carousel-caption q.lead
+{
+    display: inline-block;
+    margin-top: 20px;
+    color: #000;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon
+{
+    background-color: #CCC;
+    background-size: 30%;
+    width: 50px; height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover { background-color: #00918e }
+
+.carousel-indicators li
+{
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    background-color: #CCC;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active
+{
+    background-color: #00918e;
+    border: 1px solid #00918e;
+}
+
+@media (max-width: 767px)
+{
+    .satisfied { display: none;}
+}
+/* End Satisfied Customers */
+
+/* Start Tips & Articles */
+.tips { padding: 90px 0 }
+
+.tips h2 { color: #00918e }
+
+.tips p { width: 60%; margin: 0 auto 80px; color: #777 }
+
+.tips .card { border-radius: 10px 10px 0 0; margin-bottom: 30px;}
+
+.tips .card img {border-radius: 10px 10px 0 0 }
+
+.tips .card .card-body { margin-left: 20px; color: #00918e; width: 100%;}
+
+.tips .card .card-body .card-span{ margin-right: 5px; color: #CCC;}
+
+.tips .card .card-body .card-span a { color: #00918e; text-decoration: none;}
+
+.tips .card .card-body .card-span:last-of-type { color: #CCC }
+
+.tips .card .card-body .card-text { color: #555; margin: 30px 0; width: 100% }
+/* End Tips & Articles */
+
+/* Start Create Account */
+.account 
+{
+    padding: 50px 0;
+    background-color: #00918e;
+    height: 220px;
+    color: #FFF;
+}
+
+.account p { width: 90%; margin: 20px 0 }
+
+.account button
+{
+    margin:  10px;
+    padding: 20px 50px;
+    background: none;
+    border: 2px solid #FFF;
+    border-radius: 0;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.account button:hover
+{
+    border: 2px solid #FFF;
+    background-color: #FFF;
+    color: #00918e;
+}
+
+@media (max-width: 767px)
+{
+    .account { padding: 30px 0; height:330px;}
+
+    .account p { width: 90%; margin: 10px 0 }
+
+    .account button { margin: 0;}
+    
+    .account .account-box {margin-bottom: 20px;}
+}
+/* End Create Account */
+
+/**** Start Footer ****/
+footer
+{
+    padding: 100px 0;
+}
+
+footer h5{ font-size: 20px; font-weight: bold; margin-bottom: 20px; }
+
+footer ul li { line-height: 2.5; }
+
+footer a { text-decoration: none; color: #888;}
+
+footer ul li:hover a
+{
+    color: #00918e;
+    text-decoration: none;
+}
+
+footer ul li a i {float: left; margin-right: 30px; margin-top: 20px;}
+
+footer p { color: #888 }
+
+footer form input
+{
+    width: 69.6% !important;
+    border-radius: .25rem 0 0 .25rem !important;
+    float: left;
+    padding: 10px !important;
+    margin-right: 0;
+}
+
+footer form button
+{
+    margin-left: 0;
+    border-radius: 0 .25rem .25rem 0 !important;
+    padding: 10px 20px !important;
+    background-color: #00918e;
+}
+
+footer form button:hover {background-color: #036866;}
+
+/* Start Copyright */
+.copy-right { padding: 80px 0 0}
+
+.copy-right i { color: #F00; padding: 0 3px }
+
+.copy-right > p { font-size: 17px;}
+/* End Copyright */
+@media (max-width: 767px)
+{
+    footer .follow-us {margin-bottom: 40px;}
+}
+/**** End Footer ****/
+
+/* Start Scroll To Top */
+#scroll-top
+{
+    width: 45px;
+    height: 45px;
+    color: #FFF;
+    border-radius: 10px;
+    background-color: #00918e;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+#scroll-top:hover { background-color: #CCC; color: #00918e }
+
+#scroll-top i { font-size: 35px;line-height: 45px; }
+/* End Scroll To Top */

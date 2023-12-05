@@ -1,0 +1,469 @@
+/*
+    Website Name: Browse
+    Desiner Coder By: Osama Ahmed
+    MainColor: #00918e;
+*/
+
+/************** Start Global *************/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body { font-family: Tahoma, Arial}
+
+.head-border:after
+{
+    content: '';
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #00918e;
+    margin: 18px auto;
+}
+
+.head-border-l:after
+{
+    content: '';
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #00918e;
+    margin: 18px 0;
+}
+/*********** End Global ***************/
+
+/******************************* Start Listings ********************************/
+.listings-page { padding: 80px 0; background-color: #EFEFEF }
+
+/***** Start article *****/
+.listings-page .listings-article
+{
+    width: 700px;
+    border-radius: 8px;
+    position: relative;
+    margin-right: 20px;
+    margin-left: -40px;
+}
+
+.listings-page .listings-article .img-content { display: inline-block; position: relative; left: -15px }
+
+.listings-page .listings-article .img-content img
+{
+    background-color: #00918e;
+    width: 280px;
+    height: 220px;
+}
+
+.listings-page .listings-article .img-content span
+{
+    position: absolute;
+    top: 20px; left: 40px;
+    font-size: 18px;
+    font-weight: normal;
+    background-color: #00918e;
+    color: #FFF;
+    padding: 5px 30px;
+    border-radius: 10px;
+}
+
+.listings-page .listings-article .content
+{
+    margin: 35px -55px;
+    width: 100%;
+}
+
+.listings-page .listings-article .content .head
+{
+    color: #00918e;
+    text-decoration: none;
+}
+
+.listings-page .listings-article .content i:not(:last-of-type)
+{
+    color: #f89d13;
+}
+
+.listings-page .listings-box {background-color: #FFF;}
+
+.listings-page .listings-article .icon
+{
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    background-color: #CCC;
+    color: #00918e;
+    width: 50px; height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.listings-page .listings-article .icon:hover
+{
+    background-color: #F00;
+    color: #FFF;
+}
+
+.listings-page .listings-article .bolets .dots
+{
+    font-size: 30px;
+    color: #666;  
+}
+
+.listings-page .listings-article .bolets .num
+{
+    display: inline-block;
+    width: 40px; height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #00918e;
+    color: #FFF;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.listings-page .listings-article .bolets .num.selected
+{
+    background-color: #CCC;
+    color: #000;
+}
+
+@media (max-width: 767px)
+{
+    .listings-page .listings-article { width: 100%}
+
+    .listings-page .listings-article .content { margin: 35px -30px; width: 100% }
+}
+/**** End article *****/
+
+/***** Start aside *****/
+.listings-page .listings-aside form .filters 
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px 100px;
+}
+
+.listings-page .listings-aside form input[type="text"],
+.listings-page .listings-aside form input[type="range"],
+.listings-page .listings-aside form p,
+.listings-page .listings-aside form select
+{
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 70%;
+    margin: 0 0 10px 100px;
+    padding: 10px;
+    position: relative;
+}
+
+.listings-page .listings-aside form input[type="range"]
+{
+    color: #00918e;
+    background-color: #00918e;
+}
+
+.listings-page .listings-aside .locat
+{
+    position: relative;
+}
+
+.listings-page .listings-aside form .locat i
+{
+    position: absolute;
+    top: 14px;
+    right: 46px;
+    color: #666;
+}
+
+.listings-page .listings-aside form .check-box { margin: 0 0 10px 110px }
+
+.listings-page .listings-aside form .check-box input[type="checkbox"] { margin-right: 8px }
+
+@media (max-width: 767px)
+{
+    .listings-page .listings-aside { margin: 70px auto 0}
+}
+
+.rangeslider--horizontal {
+    height: 12px;
+    width: 65%;
+    margin-left: 100px;
+    background-color: transparent;
+    border: 1px solid transparent
+}
+
+.rangeslider--horizontal .rangeslider__fill
+{
+    top: 0;
+    height: 85%;
+    background-color: #00918e;
+}
+
+.rangeslider .rangeslider__handle
+{
+    height: 14px;
+    width: 14px;
+    top: -3px;
+    border: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.rangeslider .rangeslider__handle:after
+{
+    background: #fff !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 3px solid #00918e;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.range-output { font-weight: bold; margin-left: 104px; margin-top: 8px;}
+
+.range-output:after { content: "Km"; font-weight: normal }
+/**** End aside *****/
+/**************************** End Listings ****************************/
+
+/**************************** Start About Us ****************************/
+.about-us { padding: 80px 0 }
+
+.about-us .history {padding: 50px 0 100px;}
+
+.about-us p { color: #555 }
+
+.about-us .about-box:first-child { margin-right: 100px }
+
+.about-us .about-box h3
+{
+    color: #00918e;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.about-us .about-box p { color: #444; width: 90% }
+
+.about-us .about-box ul li i { color: #00918e; margin-right: 10px; font-size: 14px;}
+
+.about-us .about-box ul li { margin-bottom: 10px; color: #444;}
+
+.about-us .pragraph
+{
+    width: 70%;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.about-us .p2 {margin-top: 35px;}
+
+/* Our Team */
+.our-team { padding: 100px 0}
+
+.our-team .p-team {width: 30%; color: #888; margin-bottom: 50px;}
+
+.our-team .team-box:last-child {margin-top: 40px;}
+
+.our-team .team-box h4 {margin: 10px 0 }
+
+.our-team .team-box span { display: inline-block; color: #00918e; font-weight: bold; margin: 0 0 20px;}
+
+/* Our Team */
+
+/* Frequently Ask Question */
+.ask-question { padding: 100px 0 }
+
+.ask-question h2 { color: #00918e }
+
+.ask-question p { color: #888; margin-bottom: 50px;}
+
+.ask-question .panel
+{
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    margin-top: 10px;
+    width: 700px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.ask-question .panel .panel-title a
+{
+    color: #00918e;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.ask-question .panel .panel-body
+{
+    color: #666;
+    margin-top: 18px;
+}
+/* Frequently Ask Question */
+/**************************** End About Us ****************************/
+
+/**************************** Start Blog ****************************/
+.blog {padding: 100px 0 }
+/***** Start Article *****/
+.blog-article .blog-box { margin-bottom: 20px }
+
+.blog .card { border-radius: 10px 10px 0 0;}
+
+.blog .card img {border-radius: 10px 10px 0 0 }
+
+.blog .card .card-body { margin-left: 20px; color: #00918e; width: 100%;}
+
+.blog .card .card-body .card-span{ margin-right: 5px; color: #CCC;}
+
+.blog .card .card-body .card-span a { color: #00918e; text-decoration: none;}
+
+.blog .card .card-body .card-span:last-of-type { color: #CCC }
+
+.blog .card .card-body .card-text { color: #555; margin: 30px 0; width: 100% }
+
+
+.blog .blog-article .bolets .dots { font-size: 30px; color: #666 }
+
+.blog .blog-article .bolets .num
+{
+    display: inline-block;
+    width: 40px; height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #00918e;
+    color: #FFF;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.blog .blog-article .bolets .num.selected { background-color: #CCC; color: #000 }
+/***** End Article *****/
+
+/***** Start Aside *****/
+.blog .blog-aside { margin-left: 90px }
+
+.blog .blog-aside form { padding: 0 0 35px }
+
+.blog .blog-aside form label { font-size: 25px; font-weight: normal; margin-bottom: 20px }
+
+.blog .blog-aside h4 { font-weight: normal; margin-bottom: 20px;}
+
+.blog .blog-aside a {color: #00918e; text-decoration: none; line-height: 2; display: block;}
+
+.blog .blog-aside a:hover {color: #000 }
+
+.blog .blog-aside a span { color: #000 }
+
+.blog .blog-aside .popular-posts-links {margin-bottom: 50px;}
+
+@media (max-width: 767px)
+{
+    .blog .blog-aside {margin-top: 50px; margin-left: 10px};   
+}
+/***** End Aside *****/
+
+/**************************** End Blog ****************************/
+
+/**************************** Start Contact Us ****************************/
+.contact-us { background-color: #EFEFEF; padding-bottom: 100px }
+
+.contact-us form 
+{
+    padding: 50px 70px 80px;
+    background-color: #FFF;
+    margin-top: -70px;
+    display: none;
+}
+
+.contact-us form input[type="text"]:not(.subject){ display: inline-block; margin-bottom: 5px }
+
+.contact-us form input, .contact-us form textarea { padding: 7px; border-radius: 0; margin-bottom: 20px;}
+
+.contact-us form input:focus, .contact-us form textarea:focus {border: none ;border: 1px solid #00918e;}
+
+.contact-us form input[type="submit"] { padding: 17px 40px; background-color: #00918e;}
+
+.contact-us form input[type="submit"]:hover { background-color: #005c5a }
+
+.contact-us .info-contact
+{
+    background-color: #FFF;
+    margin: 80px 0 30px 20px;
+    padding: 30px;
+    display: none;
+}
+
+.contact-us .info-contact span
+{
+    display: inline-block;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.contact-us .info-contact span:not(:first-of-type) { color: #00918e }
+
+.contact-us .more-info
+{
+    background-color: #FFF;
+    margin: 0 0 30px 20px;
+    padding: 30px;
+    display: none;
+}
+
+.contact-us .more-info p { margin: 20px 0; color: #444 }
+
+.contact-us .more-info button { padding: 10px 30px; background-color: #00918e; border-radius: 0 }
+
+.contact-us .more-info button:hover { background-color: #005c5a }
+/**************************** End Contact Us ****************************/
+@media (max-width: 767px)
+{
+    .header-content h1 {font-size: 30px;}
+
+    .header-content form { width: 400px }
+
+    footer .follow-us {margin-bottom: 40px;}
+}
+
+/* Start Scroll To Top */
+#scroll-top
+{
+    width: 45px;
+    height: 45px;
+    color: #FFF;
+    border-radius: 10px;
+    background-color: #00918e;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+#scroll-top:hover { background-color: #CCC; color: #00918e }
+
+#scroll-top i { font-size: 35px;line-height: 45px; }
+
+/* End Scroll To Top */

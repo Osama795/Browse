@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- first Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Browse</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/hover.css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <!--[if it IE 9]>
+        <script src="Js/html5shiv.min.js"></script>
+        <script src="Js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!------------------------------ Start Header ------------------------------->
+<section class="header text-center">
+    <div class="overlay">
+    <!-------------------- Start Navbar -------------------->
+    <nav class="navbar navbar-expand-lg navbar-light mr-auto">
+        <div class="container">
+            <a class="navbar-brand hvr-pop" href="#">Browse</a>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                  
+            <div class="collapse navbar-collapse" id="myNavbar" >
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-scroll="dropdown">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Menu One</a>
+                        <a class="dropdown-item" href="#">Menu Two</a>
+                        <a class="dropdown-item" href="#">Menu Three</a>
+                        <a class="dropdown-item" href="#">Menu Four</a>
+                        <!--<a class="dropdown-item ">
+                            <a class="dropdown-toggle dropright" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2</a>
+                            <div class="dropdown-menu dropdown-menu2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Menu One</a>
+                                <a class="dropdown-item" href="#">Menu Two</a>
+                                <a class="dropdown-item" href="#">Menu Three</a>
+                            </div>
+                        </a>-->
+                  
+                    </div>
+                </li>
+
+                <li class="nav-item"> <a class="nav-link" href="listings.html">Listings</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="blog.html">Blog</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
+        
+            </ul>
+          </div>
+        </div>
+        </nav>
+    <!-------------------- End Navbar -------------------->
+<div class="header-content text-center wow fadeInUp">
+    <h1>Find Nearby <span class="typed-words"></span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro provident corporis consequuntur et totam.</p>
+    
+    <form method="post">
+        <div class="row">
+          <div class="col-lg-3 col-xl-4 no-sm-border border-right">
+            <input type="text" class="form-control" placeholder="What are you looking for?">
+          </div>
+          <div class="col-lg-3 col-xl-3 no-sm-border border-right">
+              <input type="text" class="form-control" placeholder="Location">
+              <i class="fa fa-map-marker-alt"></i>            
+          </div>
+
+          <div class="col-lg-3 col-xl-3">
+            <div class="select-wrap">
+              <span class="icon"><span class="icon-keyboard_arrow_down"></span></span>
+              <select class="form-control" name="" id="">
+                <option value="">All Categories</option>
+                <option value="">Hotels</option>
+                <option value="">Restaurant</option>
+                <option value="">Eat &amp; Drink</option>
+                <option value="">Events</option>
+                <option value="">Fitness</option>
+                <option value="">Others</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xl-2">
+            <input type="submit" class="btn text-white btn-success" value="Search">
+          </div>
+          
+        </div>
+      </form>
+
+</div>
+
+</section>
+<!------------------------------ End Header ------------------------------->
+
+<!------------------------------ Start Most Visited Places ------------------------------->
+<section class="listings">
+  <div class="container">
+    <h2 class="h1 text-center">Most Visited Places</h2>
+    <p class="head-border text-center">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    <div class="row listings-box">  
+      <div class="col-md-4 box">      
+        <div class="listing-item">
+          <div class="over"></div>
+          <div class="listing-image">
+            <img src="images/img_1.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div>
+          <div class="listing-item-content">
+            <a class="px-3 mb-3 category" href="#">Hotels</a>
+            <h4 class="mb-1"><a href="listing.html">Luxe Hotel</a></h4>
+            <span class="address">West Orange, New York</span>
+          </div>
+
+          <a href="listings.html"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 box">      
+        <div class="listing-item">
+          <div class="over"></div>
+          <div class="listing-image">
+            <img src="images/img_2.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div>
+          <div class="listing-item-content">
+            <a href="listings.html" class="bookmark" data-toggle="tooltip" data-placement="left" title="Bookmark"><span class="icon-heart"></span></a>
+            <a class="px-3 mb-3 category" href="#">Restaurants</a>
+            <h4 class="mb-1"><a href="listings.html">Jones Grill & Restaurants</a></h4>
+            <span class="address">Brooklyn, New York</span>
+          </div>
+          <a href="listings.html"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 box">      
+        <div class="listing-item">
+          <div class="over"></div>
+          <div class="listing-image">
+            <img src="images/img_3.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div>
+          <div class="listing-item-content">
+            <a href="listings.html" class="bookmark" data-toggle="tooltip" data-placement="left" title="Bookmark"><span class="icon-heart"></span></a>
+            <a class="px-3 mb-3 category" href="#">Events</a>
+            <h4 class="mb-1"><a href="listings.html">Live Band</a></h4>
+            <span class="address">West Orange, New York</span>
+          </div>
+          <a href="listings.html"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row listings-box">  
+      <div class="col-md-4 box">      
+        <div class="listing-item">
+          <div class="over"></div>
+          <div class="listing-image">
+            <img class="img-fluid" src="images/img_4.jpg" alt="Free Website Template by Free-Template.co">
+          </div>
+          <div class="listing-item-content">
+            <a href="listings.html"></a>
+            <a class="px-3 mb-3 category" href="#">Others</a>
+            <h4 class="mb-1"><a href="listings.html">Gourmet Coffees</a></h4>
+            <span class="address">New York City</span>
+          </div>
+          <a href="listings.html"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 box">      
+        <div class="listing-item">
+          <div class="over"></div>
+          <div class="listing-image">
+            <img src="images/img_5.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div>
+          <div class="listing-item-content">
+            <a href="listings.html" class="bookmark" data-toggle="tooltip" data-placement="left" title="Bookmark"><span class="icon-heart"></span></a>
+            <a class="px-3 mb-3 category" href="#">SPA</a>
+            <h4 class="mb-1"><a href="listings.html">La Italia Spa</a></h4>
+            <span class="address">Italy</span>
+          </div>
+          <a href="listings.html"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 box">      
+        <div class="listing-item">
+          <div class="over"></div>
+          <div class="listing-image">
+            <img src="images/img_6.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+          </div>
+          <div class="listing-item-content">
+            <a href="listings.html" class="bookmark" data-toggle="tooltip" data-placement="left" title="Bookmark"><span class="icon-heart"></span></a>
+            <a class="px-3 mb-3 category" href="#">Stores</a>
+            <h4 class="mb-1"><a href="listings.html">Super Market Mall</a></h4>
+            <span class="address">West Orange, New York</span>
+          </div>
+          <a href="listings.html"><i class="fa fa-heart"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!------------------------------ End Most Visited Places ------------------------------->
+
+<!------------------------------ Start Popular Categories ------------------------------->
+<section class="popular-categories text-center">
+  <div class="container">
+    <h2 class="h1 text-center">Popular Categories</h2>
+    <p class="head-border text-center">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+  
+  <div class="row">
+    <div class="col-6 col-sm-6 col-md-4 mb-4 mb-lg-0 col-lg-2">
+      <div class="categories-box">
+        <i class="fas fa-hotel fa-2x"></i>
+        <h4>HOTELS</h4>
+        <span>4,89</span>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 mb-4 mb-lg-0 col-lg-2">
+      <div class="categories-box">
+        <i class="fa fa-microphone fa-2x"></i>
+        <h4>EVENTS</h4>
+        <span>482</span>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 mb-4 mb-lg-0 col-lg-2">
+      <div class="categories-box">
+        <i class="fa fa-spa fa-2x"></i>
+        <h4>SPA</h4>
+        <span>194</span>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 mb-4 mb-lg-0 col-lg-2">
+      <div class="categories-box">
+        <i class="fa fa-store-alt fa-2x"></i>
+        <h4>STORES</h4>
+        <span>1,472</span>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 mb-4 mb-lg-0 col-lg-2">
+      <div class="categories-box">
+        <i class="fa fa-bed fa-2x"></i>
+        <h4>RESTAURANTS</h4>
+        <span>439</span>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 mb-4 mb-lg-0 col-lg-2">
+      <div class="categories-box">
+        <i class="fa fa-bicycle fa-2x"></i>
+        <h4>OTHER</h4>
+        <span>692</span>
+      </div>
+    </div>
+    
+  </div>
+
+  <button class="btn">View All Categories</button>
+</section>
+<!------------------------------ End Popular Categories ------------------------------->
+
+<!------------------------------ Start Why Us ------------------------------->
+<section class="why-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <img class="img-fluid" src="images/img_1.jpg" alt="" />
+      </div>
+
+      <div class="col-md why-us-box">
+        <h2 class="h1">Why Us</h2>
+
+                <!-- Start FAQ Accordion -->
+      <div class="panel-group" id="accordion" roles="tablist" aria-multiselectable="true">
+        <!-- Start Questions [1] -->
+        <div class="panel panel-default">
+            <div class="panel-heading" roles="tab" id="heading-one">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                        How to list my item?
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-one" class="panel-collapse collapse in" roles="tabpanel" aria-labelledby="heading-one">
+                <div class="panel-body">
+                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                </div>
+            </div> 
+        </div>
+        <!-- End Questions [1] -->
+
+        <!-- Start Questions [2] -->
+        <div class="panel panel-default">
+            <div class="panel-heading" roles="tab" id="heading-two">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-two" aria-expanded="true" aria-controls="collapse-two">
+                        Is this available in my country?
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-two" class="panel-collapse collapse" roles="tabpanel" aria-labelledby="heading-two">
+                <div class="panel-body">
+                  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </div>
+            </div> 
+        </div>
+        <!-- End Questions [2] -->
+
+        <!-- Start Questions [3] -->
+        <div class="panel panel-default">
+            <div class="panel-heading" roles="tab" id="heading-three">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
+                        Is it free?
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-three" class="panel-collapse collapse" roles="tabpanel" aria-labelledby="heading-three">
+                <div class="panel-body">
+                  Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                </div>
+            </div> 
+        </div>
+        <!-- End Questions [3] -->
+
+        <!-- Start Questions [4] -->
+        <div class="panel panel-default">
+            <div class="panel-heading" roles="tab" id="heading-four">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-four" aria-expanded="true" aria-controls="collapse-four">
+                        How the system works?
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-four" class="panel-collapse collapse" roles="tabpanel" aria-labelledby="heading-four">
+                <div class="panel-body">
+                  The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
+                </div>
+            </div> 
+        </div>
+        <!-- End Questions [4] -->
+
+    </div>
+<!-- End FAQ Accordion -->
+      </div>
+
+    </div>
+  </div>
+</section>
+<!------------------------------ End Why Us ------------------------------->
+
+<!------------------------------ Start How It Works ------------------------------->
+<section class="how-work text-center">
+  <div class="container">
+    <h2 class="h1 text-center">How It Works</h2>
+    <p class="head-border text-center work-p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    <div class="row">
+      <div class="col-md how-work-box">
+        <div class="how-work-img">
+          <img class="img-fluid" src="images/step-1.svg" alt="" />
+        </div>
+        <span class="num">1</span>
+        <h3>Decide What To Do</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+
+      <div class="col-md how-work-box">
+        <div class="how-work-img">
+          <img class="img-fluid" src="images/step-2.svg" alt="" />
+        </div>
+        <span class="num">2</span>
+        <h3>Find What You Want</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+
+      <div class="col-md how-work-box">
+        <div class="how-work-img">
+          <img class="img-fluid" src="images/step-3.svg" alt="" />
+        </div>
+        <span class="num">3</span>
+        <h3>Explore Amazing Places</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!------------------------------ End How It Works ------------------------------->
+
+<!------------------------------ Start Satisfied Customers ------------------------------->
+<section class="satisfied text-center xs-hidden">
+  <h2 class="h1 head-border">Satisfied Customers</h2>
+  <div id="satisfied-slid" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#satisfied-slid" data-slide-to="0" class="active"></li>
+      <li data-target="#satisfied-slid" data-slide-to="1"></li>
+      <li data-target="#satisfied-slid" data-slide-to="2"></li>
+      <li data-target="#satisfied-slid" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-caption d-none d-md-block">
+          <img class="d-block img-fluid" src="images/person_3_sq.jpg" alt="person_3" style="width: 100px;height: 100px;">
+          <h5>Peter Smith</h5>
+          <q class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts, Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</q>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-caption d-none d-md-block">
+          <img class="d-block img-fluid" src="images/person_2_sq.jpg" alt="person_3" style="width: 100px;height: 100px;">
+          <h5>Peter Smith</h5>
+          <q class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts, Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</q>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-caption d-none d-md-block">
+          <img class="d-block img-fluid" src="images/person_1_sq.jpg" alt="person_3" style="width: 100px;height: 100px;">
+          <h5>Peter Smith</h5>
+          <q class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts, Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</q>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-caption d-none d-md-block">
+          <img class="d-block img-fluid" src="images/person_4_sq.jpg" alt="person_3" style="width: 100px;height: 100px;">
+          <h5>Peter Smith</h5>
+          <q class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts, Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</q>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#satisfied-slid" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#satisfied-slid" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+</section>
+<!------------------------------ End Satisfied Customers ------------------------------->
+
+<!------------------------------ Start Tips & Articles ------------------------------->
+<section class="tips">
+  <div class="container">
+    <h2 class="h1 text-center">Tips & Articles</h2>
+    <p class="head-border text-center">See Our Daily tips & articles</p>
+
+    <div class="row">
+      <div class="col-md tips-box">
+        <div class="card">
+          <img class="card-img-top" src="images/img_1.jpg" alt="Blog">
+          <div class="card-body">
+            <h5 class="card-title">Etiquette tips for travellers</h5>
+            <span class="card-span">by <a href="#">Jeff Sheldon</a></span>
+            <span class="card-span"><i class="far fa-clock fa-sm"></i> May 5th, 2019</span>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md tips-box">
+        <div class="card">
+          <img class="card-img-top" src="images/img_2.jpg" alt="Blog">
+          <div class="card-body">
+            <h5 class="card-title">Etiquette tips for travellers</h5>
+            <span class="card-span">by <a href="#">Jeff Sheldon</a></span>
+            <span class="card-span"><i class="far fa-clock fa-sm"></i> May 5th, 2019</span>
+            <p class="card-text">Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md tips-box">
+        <div class="card">
+          <img class="card-img-top" src="images/img_3.jpg" alt="Blog">
+          <div class="card-body">
+            <h5 class="card-title">Etiquette tips for travellers</h5>
+            <span class="card-span">by <a href="#">Jeff Sheldon</a></span>
+            <span class="card-span"><i class="far fa-clock fa-sm"></i> May 5th, 2019</span>
+            <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+<!------------------------------ End Tips & Articles ------------------------------->
+
+<!------------------------------ Start Create Account ------------------------------->
+<section class="account">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 account-box">
+        <h2>Let's get started. Create your account</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+
+      <div class="col-md-4 account-box">
+        <button class="btn">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------ End Create Account ------------------------------->
+
+<!------------------------------ Start Footer ------------------------------->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <h5>Products</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <h5>Features</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 follow-us">
+        <h5>Follow Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+        </ul>
+      </div>
+      
+      <div class="col-md-3">
+        <h5>Subscribe Newsletter</h5>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <form>         
+          <input class="form-control" type="email" placeholder="Enter Email" />
+          <button class="btn text-white">Send</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+<!------------------------------ Start Copyright ------------------------------->
+<div class="copy-right text-center">
+  <p>Copyright &copy;2020 All rights reserved | This template is made with<i class="fa fa-heart"></i> by Colorlib</p> 
+</div>
+<!------------------------------ End Copyright ------------------------------->
+</footer>
+<!------------------------------ End Footer ------------------------------->
+
+<!-- Start Scroll To Top -->
+<div id="scroll-top">
+  <i class="fa fa-chevron-up fa-3x"></i>
+</div>
+<!-- End Scroll To Top  -->
+
+    <script src="Js/jquery-3.3.1.min.js"></script>
+    <script src="Js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/jquery.nicescroll.min.js"></script>
+    <script src="Js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="Js/rangeslider.min.js"></script>
+    <script src="Js/typed.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
